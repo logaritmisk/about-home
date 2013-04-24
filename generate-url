@@ -1,0 +1,4 @@
+#!/bin/bash
+
+
+echo "file://$PWD/home.html"

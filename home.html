@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>Home!</title>
+    <style>
+      body {
+        background-position: center center;
+        background-repeat: repeat;
+      }
+    </style>
+    <script src="lib/zepto.min.js"></script>
+  </head>
+  <body>
+    <script>
+      (function($) {
+
+      var GIFS = [
+        'disco.gif',
+        'cat.gif',
+        'cool.gif',
+        'lift.gif',
+        'dance.gif',
+        'friday.gif',
+      ];
+
+      $('body').css('background-image', 'url(img/' + GIFS[Math.floor(Math.random() * GIFS.length)] + ')');
+
+      }(Zepto))
+    </script>
+  </body>
+</html>

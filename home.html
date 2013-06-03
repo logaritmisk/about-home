@@ -2,29 +2,31 @@
   <head>
     <title>Home!</title>
     <style>
-      body {
-        background-position: center center;
-        background-repeat: repeat;
-      }
+body {
+  background-position: center center;
+  background-repeat: repeat;
+}
     </style>
     <script src="lib/zepto.min.js"></script>
   </head>
   <body>
     <script>
-      (function($) {
+(function($) {
 
-      var GIFS = [
-        'disco.gif',
-        'cat.gif',
-        'cool.gif',
-        'lift.gif',
-        'dance.gif',
-        'friday.gif',
-      ];
+  var GIFS = [
+    'disco.gif',
+    'cat.gif',
+    'cool.gif',
+    'lift.gif',
+    'dance.gif',
+    'friday.gif',
+    'panda.gif',
+    'rush.gif'
+  ];
 
-      $('body').css('background-image', 'url(img/' + GIFS[Math.floor(Math.random() * GIFS.length)] + ')');
+  $('body').css('background-image', 'url(img/' + GIFS[Math.floor(Math.random() * GIFS.length)] + ')');
 
-      }(Zepto))
+}(Zepto))
     </script>
   </body>
 </html>
